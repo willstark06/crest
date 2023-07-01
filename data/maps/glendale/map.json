@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_TRAIL1",
-      "offset": 4,
+      "offset": 6,
       "direction": "up"
     }
   ],
