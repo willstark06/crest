@@ -15,3 +15,47 @@ movement leavetrailone{
     face_down
     walk_down
 }
+
+script dadintro{
+    lockall
+    msgbox(format("???: Psst.. {PLAYER}!"))
+    waitmessage
+    applymovement(2, dadreveal)
+    waitmovement(0)
+    msgbox(format("DAD: It's me. Sssh! Be quiet."))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, controllertodad)
+    waitmovement(0)
+    msgbox(format("DAD: There's a rare POKEMON up there. I've seen it before, but it flees before I can attempt to catch it.\pHey, why don't you try to battle it!\pC'mon, it's easy.\lJust grab one of the POKEMON from my bag there and send it out!"))
+    waitmessage
+    releaseall
+}
+
+movement dadreveal{
+    walk_up
+    face_right
+}
+
+movement controllertodad{
+    walk_left * 3
+    walk_up
+    face_left
+}
+
+script dadnocomeback{
+    lockall
+    msgbox(format("DAD: C'mon kid don't be scared!\p"))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, comebacktodad)
+    waitmovement(0)
+    releaseall
+}
+
+movement comebacktodad{
+    walk_up
+}
+
+script glendalechoosestarter{
+    setflag(FLAG_SYS_POKEMON_GET)
+	special(ChooseStarter)
+}
