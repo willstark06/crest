@@ -1,0 +1,8 @@
+raw `Playershouse_MapScripts::
+	.byte 0
+`
+script controllershouse_eventscript_fridge {
+    lockall
+    msgbox("Looks yummy.")
+    releaseall
+}
