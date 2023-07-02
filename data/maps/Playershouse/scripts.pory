@@ -1,8 +1,34 @@
-raw `Playershouse_MapScripts::
-	.byte 0
-`
+
+mapscripts Playershouse_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: controllershouse_ontransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script controllershouse_ontransition{
+    setrespawn(HEAL_LOCATION_CONTROLLERS_HOUSE)
+    end
+}
+
 script controllershouse_eventscript_fridge {
     lockall
     msgbox("Looks yummy.")
+    releaseall
+}
+
+script controllershouse_eventscript_bed {
+    lockall
+    msgbox("It's your bed. It could be comfier.")
+    releaseall
+}
+
+script controllershouse_eventscript_shelf {
+    lockall
+    msgbox("It's DAD's research instruments.")
+    releaseall
+}
+
+script controllershouse_eventscript_hermiebed{
+    lockall
+    msgbox("It's Hermie's bed.")
     releaseall
 }

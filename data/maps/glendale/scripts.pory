@@ -1,0 +1,17 @@
+raw `glendale_MapScripts::
+	.byte 0
+`
+
+script controllernoroute{
+    lockall
+    msgbox(format("It's too dangerous to go any further without borrowing one of DAD's POKEMON."))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER, leavetrailone)
+    waitmovement(0)
+    releaseall
+}
+    
+movement leavetrailone{
+    face_down
+    walk_down
+}

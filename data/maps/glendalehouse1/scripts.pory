@@ -1,0 +1,8 @@
+raw `glendalehouse1_MapScripts::
+	.byte 0
+`
+script glendalehouseone_eventscript_fridge {
+    lockall
+    msgbox("Looks yummy.")
+    releaseall
+}
