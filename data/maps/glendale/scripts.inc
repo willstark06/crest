@@ -61,7 +61,22 @@ comebacktodad:
 
 glendalechoosestarter::
 	setflag FLAG_SYS_POKEMON_GET
+	setvar VAR_GLENDALE_STATE, 1
 	special ChooseStarter
+	lockall
+	setflag FLAG_DAD_STARTERS
+	msgbox glendalechoosestarter_Text_0
+	waitmessage
+	warp MAP_DADLAB, 5, 9
+	releaseall
+	return
+
+
+glendalelabsign::
+	lockall
+	msgbox glendalelabsign_Text_0
+	waitmessage
+	releaseall
 	return
 
 
@@ -77,14 +92,23 @@ dadintro_Text_1:
 	.string "DAD: It's me. Sssh! Be quiet.$"
 
 dadintro_Text_2:
-	.string "DAD: There's a rare POKEMON up there.\n"
-	.string "I've seen it before, but it flees before\l"
-	.string "I can attempt to catch it.\p"
+	.string "There's a rare POKEMON up there. I've\n"
+	.string "seen it before, but it flees before I\l"
+	.string "can attempt to catch it.\p"
 	.string "Hey, why don't you try to battle it!\p"
 	.string "C'mon, it's easy.\l"
 	.string "Just grab one of the POKEMON from my\l"
 	.string "bag there and send it out!$"
 
 dadnocomeback_Text_0:
-	.string "DAD: C'mon kid don't be scared!\p"
-	.string "$"
+	.string "C'mon kid. don't be scared!$"
+
+glendalechoosestarter_Text_0:
+	.string "DAD: Well, it escaped.\p"
+	.string "But at least we got some interesting\n"
+	.string "data.\p"
+	.string "What a fascinating creature...\p"
+	.string "Let's get inside now, kid.$"
+
+glendalelabsign_Text_0:
+	.string "PROF. JOSHUA's Lab$"

@@ -31,7 +31,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "glendalechoosestarter",
-      "flag": "0"
+      "flag": "FLAG_DAD_STARTERS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
@@ -44,7 +44,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_DAD_STARTERS"
     }
   ],
   "warp_events": [
@@ -61,6 +61,13 @@
       "elevation": 0,
       "dest_map": "MAP_GLENDALEHOUSE1",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 28,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_DADLAB",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -69,7 +76,7 @@
       "x": 14,
       "y": 1,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_GLENDALE_STATE",
       "var_value": "0",
       "script": "controllernoroute"
     },
@@ -78,7 +85,7 @@
       "x": 15,
       "y": 1,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_GLENDALE_STATE",
       "var_value": "0",
       "script": "controllernoroute"
     },

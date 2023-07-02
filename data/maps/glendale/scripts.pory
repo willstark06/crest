@@ -26,7 +26,7 @@ script dadintro{
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, controllertodad)
     waitmovement(0)
-    msgbox(format("DAD: There's a rare POKEMON up there. I've seen it before, but it flees before I can attempt to catch it.\pHey, why don't you try to battle it!\pC'mon, it's easy.\lJust grab one of the POKEMON from my bag there and send it out!"))
+    msgbox(format("There's a rare POKEMON up there. I've seen it before, but it flees before I can attempt to catch it.\pHey, why don't you try to battle it!\pC'mon, it's easy.\lJust grab one of the POKEMON from my bag there and send it out!"))
     waitmessage
     releaseall
 }
@@ -44,7 +44,7 @@ movement controllertodad{
 
 script dadnocomeback{
     lockall
-    msgbox(format("DAD: C'mon kid don't be scared!\p"))
+    msgbox(format("C'mon kid. don't be scared!"))
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER, comebacktodad)
     waitmovement(0)
@@ -57,5 +57,19 @@ movement comebacktodad{
 
 script glendalechoosestarter{
     setflag(FLAG_SYS_POKEMON_GET)
+    setvar(VAR_GLENDALE_STATE, 1)
 	special(ChooseStarter)
+    lockall
+    setflag(FLAG_DAD_STARTERS)
+    msgbox(format("DAD: Well, it escaped.\pBut at least we got some interesting data.\pWhat a fascinating creature... \pLet's get inside now, kid."))
+    waitmessage
+    warp(MAP_DADLAB, 5, 9)
+    releaseall
+}
+
+script glendalelabsign{
+    lockall
+    msgbox(format("PROF. JOSHUA's Lab"))
+    waitmessage
+    releaseall
 }

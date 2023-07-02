@@ -4450,6 +4450,36 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/glendalehouse1/border.bin",
       "blockdata_filepath": "data/layouts/glendalehouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_DADLAB",
+      "name": "dadlab_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/dadlab/border.bin",
+      "blockdata_filepath": "data/layouts/dadlab/map.bin"
+    },
+    {
+      "id": "LAYOUT_GLENDALEHOUSE2",
+      "name": "glendalehouse2_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/glendalehouse2/border.bin",
+      "blockdata_filepath": "data/layouts/glendalehouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GLENDALEHOUSE2UP",
+      "name": "glendalehouse2up_Layout",
+      "width": 7,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/glendalehouse2up/border.bin",
+      "blockdata_filepath": "data/layouts/glendalehouse2up/map.bin"
     }
   ]
 }

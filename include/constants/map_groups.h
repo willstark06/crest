@@ -74,6 +74,9 @@
 #define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB (4 | (1 << 8))
 #define MAP_PLAYERSHOUSE                         (5 | (1 << 8))
 #define MAP_GLENDALEHOUSE1                       (6 | (1 << 8))
+#define MAP_DADLAB                               (7 | (1 << 8))
+#define MAP_GLENDALEHOUSE2                       (8 | (1 << 8))
+#define MAP_GLENDALEHOUSE2UP                     (9 | (1 << 8))
 
 // gMapGroup_IndoorOldale
 #define MAP_OLDALE_TOWN_HOUSE1            (0 | (2 << 8))
