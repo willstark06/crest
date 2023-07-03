@@ -137,17 +137,16 @@ dadintro_Text_2:
 	.string "seen it before, but it flees before I\l"
 	.string "can attempt to catch it.\p"
 	.string "Hey, why don't you try to battle it!\p"
-	.string "C'mon, it's easy.\l"
-	.string "Just grab one of the POKéMON from my\l"
-	.string "bag there and send it out!$"
+	.string "C'mon, it's easy. Just grab one of the\n"
+	.string "POKéMON from my bag there and send it\l"
+	.string "out!$"
 
 dadnocomeback_Text_0:
 	.string "C'mon kid. Don't be scared!$"
 
 glendalechoosestarter_Text_0:
-	.string "DAD: Well, it escaped.\p"
-	.string "But at least we got some interesting\n"
-	.string "data.\p"
+	.string "DAD: Well, it escaped. But at least we\n"
+	.string "got some interesting data.\p"
 	.string "What a fascinating creature...\p"
 	.string "Let's get inside now, kid.$"
 

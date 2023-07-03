@@ -1,2 +1,61 @@
 mapscripts trail1_MapScripts{}
 
+script hermiebattleone{
+    applymovement(1, hermieface)
+    waitmovement(0)
+    msgbox(format("Hey {PLAYER}! This mud is sick!\pWait - did DAD give you a POKéMON too? Can I see? No wait, I have a better idea. Lets battle!\pThere's no way you'll beat me."))
+    waitmessage
+    trainerbattle_single(TRAINER_HERMIE_TRAIL_ONE, hermieintro, hermieoutro, hermieleave)
+}
+
+script hermieleave{
+    setflag(FLAG_HERMIE_BATTLE_ONE)
+    lockall
+    msgbox(format("Your POKéMON is way stronger!!! Why does DAD always give you the stronger ones!!!\pI'm gonna make him give me a better one!"))
+    waitmessage
+    if(var(VAR_HERMIE_POS) == 0){
+        applymovement(1, hermiewalk)
+        waitmovement(0)
+    }
+    else{
+        applymovement(1, hermiewalk2)
+        waitmovement(0)
+    }
+    removeobject(1)
+    releaseall
+}
+
+movement hermieface{
+    face_player
+}
+
+movement hermiewalk{
+    walk_down * 2
+    walk_left * 9
+    walk_down * 3
+
+}
+
+movement hermiewalk2{
+    walk_left
+    walk_down * 2
+    walk_left * 9
+    walk_down * 3
+
+}
+
+text hermieintro{
+    format("'Cause my POKéMON will never lose!")
+}
+
+text hermieoutro{
+    "No fair!"
+}
+
+script changehermiewalktoleft{
+    setvar(VAR_HERMIE_POS, 1)
+}
+
+script changehermiewalktodown{
+    setvar(VAR_HERMIE_POS, 0)
+}
