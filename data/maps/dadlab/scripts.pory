@@ -1,0 +1,85 @@
+mapscripts dadlab_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_DAD_NICKNAMETIME, 0: dadinlab
+    ]
+    MAP_SCRIPT_ON_TRANSITION:dadlabontransition
+}
+
+script dadinlab{
+    setvar(VAR_DAD_NICKNAMETIME, 1)
+    turnobject(OBJ_EVENT_ID_PLAYER, DIR_WEST)
+    turnobject(1, DIR_EAST)
+    if(var(VAR_GLENDALE_STATE) == 1) {
+        lock
+        msgbox(format("DAD: I gotta say I'm impressed.\pYou and that POKéMON were completely in sync.\lI think it's time I let you and your brother have POKéMON of your own.\pWhich means you could give a name to that POKéMON of yours! Whadd'ya say?"), MSGBOX_YESNO)
+        if(var(VAR_RESULT) == YES){
+            call(Common_EventScript_GetGiftMonPartySlot)
+            call(Common_EventScript_NameReceivedPartyMon)
+        }
+        msgbox(format("Speaking of your brother, can you go find him?\pI don't want him running off too far."))
+        waitmessage
+        release
+    }
+    end
+}
+
+script dadfindyourbrother{
+    lockall
+    msgbox(format("Go find your brother, I don't want Hermie running off too far."), MSGBOX_NPC)
+    waitmessage
+    releaseall
+}
+
+script dadlabontransition{
+    end
+}
+
+movement controllerlookup{
+    face_up
+}
+
+script dadbed{
+    lockall
+    msgbox(format("It's DAD's bed that he dragged in here."))
+    waitmessage
+    releaseall
+}
+
+script dadlabmachine{
+    lockall
+    msgbox(format("Who knows what he uses this for."))
+    waitmessage
+    releaseall
+}
+
+script dadcomputer1{
+    lockall
+    msgbox(format("There's an E-MAIL on screen from 'samson.oak.mail.pc'.\pIt's probably best not to read it."))
+    waitmessage
+    releaseall
+}
+
+script dadcomputer2{
+    lockall
+    msgbox(format("It's some of DAD's field data on the wild POKéMON in the area."))
+    waitmessage
+    releaseall
+}
+
+script dadlabbooks{
+    lockall
+    msgbox(format("There's no way he has time to read all of these."))
+    waitmessage
+    releaseall
+}
+
+script dadcomputer3{
+    lockall
+    msgbox(format("There's a program called 'infinit.exe' running."))
+    waitmessage
+    releaseall
+}
+
+
+
+

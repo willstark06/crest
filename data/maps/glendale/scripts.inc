@@ -1,5 +1,7 @@
 glendale_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, glendalescript_ontransition
 	.byte 0
+
 
 controllernoroute::
 	lockall
@@ -61,15 +63,38 @@ comebacktodad:
 
 glendalechoosestarter::
 	setflag FLAG_SYS_POKEMON_GET
+	clearflag FLAG_DAD_NICKNAME
 	setvar VAR_GLENDALE_STATE, 1
+	setvar VAR_DAD_NICKNAMETIME, 0
 	special ChooseStarter
 	lockall
+	removeobject 1
 	setflag FLAG_DAD_STARTERS
 	msgbox glendalechoosestarter_Text_0
 	waitmessage
-	warp MAP_DADLAB, 5, 9
+	warp MAP_DADLAB, -1, 5, 6
 	releaseall
 	return
+
+
+glendalescript_ontransition::
+	compare VAR_GLENDALE_STATE, 0
+	goto_if_eq glendalescript_ontransition_2
+	compare VAR_GLENDALE_STATE, 1
+	goto_if_eq glendalescript_ontransition_3
+glendalescript_ontransition_1:
+	end
+
+glendalescript_ontransition_2:
+	setrespawn HEAL_LOCATION_CONTROLLERS_HOUSE
+	setflag FLAG_DAD_NICKNAME
+	setflag FLAG_DAD_NORMAL
+	goto glendalescript_ontransition_1
+
+glendalescript_ontransition_3:
+	setflag FLAG_DAD_NICKNAME
+	clearflag FLAG_DAD_NORMAL
+	goto glendalescript_ontransition_1
 
 
 glendalelabsign::
@@ -80,10 +105,26 @@ glendalelabsign::
 	return
 
 
+glendalefatman::
+	lockall
+	msgbox glendalefatman_Text_0, MSGBOX_NPC
+	waitmessage
+	releaseall
+	return
+
+
+glendaleboy::
+	lockall
+	msgbox glendaleboy_Text_0, MSGBOX_NPC
+	waitmessage
+	releaseall
+	return
+
+
 controllernoroute_Text_0:
 	.string "It's too dangerous to go any further\n"
 	.string "without borrowing one of DAD's\l"
-	.string "POKEMON.$"
+	.string "POKéMON.$"
 
 dadintro_Text_0:
 	.string "???: Psst.. {PLAYER}!$"
@@ -92,16 +133,16 @@ dadintro_Text_1:
 	.string "DAD: It's me. Sssh! Be quiet.$"
 
 dadintro_Text_2:
-	.string "There's a rare POKEMON up there. I've\n"
+	.string "There's a rare POKéMON up there. I've\n"
 	.string "seen it before, but it flees before I\l"
 	.string "can attempt to catch it.\p"
 	.string "Hey, why don't you try to battle it!\p"
 	.string "C'mon, it's easy.\l"
-	.string "Just grab one of the POKEMON from my\l"
+	.string "Just grab one of the POKéMON from my\l"
 	.string "bag there and send it out!$"
 
 dadnocomeback_Text_0:
-	.string "C'mon kid. don't be scared!$"
+	.string "C'mon kid. Don't be scared!$"
 
 glendalechoosestarter_Text_0:
 	.string "DAD: Well, it escaped.\p"
@@ -111,4 +152,14 @@ glendalechoosestarter_Text_0:
 	.string "Let's get inside now, kid.$"
 
 glendalelabsign_Text_0:
-	.string "PROF. JOSHUA's Lab$"
+	.string "PROF. STERN's Lab$"
+
+glendalefatman_Text_0:
+	.string "I've heard there's a META-ZONE where\n"
+	.string "you can play the SAFARI GAME in a\l"
+	.string "virtual world!\p"
+	.string "The power of science is amazing.$"
+
+glendaleboy_Text_0:
+	.string "Tell your dad he better give me a\n"
+	.string "POKéMON!$"

@@ -4,5 +4,14 @@ raw `glendalehouse1_MapScripts::
 script glendalehouseone_eventscript_fridge {
     lockall
     msgbox("Looks yummy.")
+    waitmessage
+    releaseall
+}
+
+
+script glendalehouseoneman{
+    lockall
+    msgbox(format("That dad of yours is one interesting fella."), MSGBOX_NPC)
+    waitmessage
     releaseall
 }

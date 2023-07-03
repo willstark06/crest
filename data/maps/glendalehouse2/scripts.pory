@@ -1,0 +1,31 @@
+mapscripts glendalehouse2_MapScripts {
+
+}
+
+script glendalehousetwo_eventscript_fridge {
+    lockall
+    msgbox("Looks yummy.")
+    waitmessage
+    releaseall
+}
+
+script glendalehousetwo_couch {
+	lockall
+	msgbox("Looks comfy.")
+    waitmessage
+	releaseall
+}
+
+script glendalehousetwoman{
+    lockall
+    msgbox(format("Hermie came by earlier, said he was going out to see something or other."), MSGBOX_NPC)
+    waitmessage
+    releaseall
+}
+
+script glendalehousetwowoman{
+    lockall
+    msgbox(format("I miss the days when I could explore the great outdoors."), MSGBOX_NPC)
+    waitmessage
+    releaseall
+}
