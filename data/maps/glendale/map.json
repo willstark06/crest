@@ -17,6 +17,11 @@
       "map": "MAP_TRAIL1",
       "offset": 6,
       "direction": "up"
+    },
+    {
+      "map": "MAP_TRAIL2",
+      "offset": 30,
+      "direction": "up"
     }
   ],
   "object_events": [

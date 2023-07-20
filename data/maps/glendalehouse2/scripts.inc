@@ -41,7 +41,7 @@ glendalehousetwo_couch_Text_0:
 	.string "Looks comfy.$"
 
 glendalehousetwoman_Text_0:
-	.string "Hermie came by earlier, said he was\n"
+	.string "HERMIE came by earlier, said he was\n"
 	.string "going out to see something or other.$"
 
 glendalehousetwowoman_Text_0:

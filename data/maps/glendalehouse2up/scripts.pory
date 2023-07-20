@@ -11,16 +11,16 @@ script glendalehouse2upshelf {
 
 script glendalehouse2uptrash {
     lockall
-    msgbox(format("It's a trash can.\pThere's something inside!"))
+    msgbox(format("It's a trash can."))
     waitmessage
-    giveitem(ITEM_POKE_BALL, 5)
+
     
     releaseall
 }
 
 script glendalehouse2upbed{
     lockall
-    msgbox(format("It's Henry's old bed from before he left town to become a POKéMON trainer...\pHopefully that worked out for him."))
+    msgbox(format("It's HENRY's old bed from before he left town to become a POKéMON trainer...\pHopefully that worked out for him."))
     waitmessage
     releaseall
 }

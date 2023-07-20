@@ -25,6 +25,7 @@ const struct MonCoords gMonBackPicCoords[] =
 {
     [SPECIES_NONE]                         = { .size = MON_COORDS_SIZE(40, 40), .y_offset = 12 },
     [SPECIES_BULBASAUR]   = { .size = MON_COORDS_SIZE(48, 32), .y_offset = 16 },
+    [SPECIES_FIBNAR]      = { .size = MON_COORDS_SIZE(48, 32), .y_offset = 3 },
     [SPECIES_IVYSAUR]     = { .size = MON_COORDS_SIZE(48, 48), .y_offset =  9 },
     [SPECIES_VENUSAUR]    = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  7 },
     [SPECIES_CHARMANDER]  = { .size = MON_COORDS_SIZE(48, 40), .y_offset = 14 },

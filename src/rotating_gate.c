@@ -177,7 +177,7 @@ enum
 {
     PUZZLE_NONE,
     PUZZLE_FORTREE_CITY_GYM,
-    PUZZLE_ROUTE110_TRICK_HOUSE_PUZZLE6,
+//    PUZZLE_ROUTE110_TRICK_HOUSE_PUZZLE6,
 };
 
 // structure
@@ -206,17 +206,17 @@ static const struct RotatingGatePuzzle sRotatingGate_FortreePuzzleConfig[] =
 // Trickhouse
 static const struct RotatingGatePuzzle sRotatingGate_TrickHousePuzzleConfig[] =
 {
-    {14,  5, GATE_SHAPE_T1, GATE_ORIENTATION_90},
-    {10,  6, GATE_SHAPE_L2, GATE_ORIENTATION_180},
-    { 6,  6, GATE_SHAPE_L4, GATE_ORIENTATION_90},
+   {14,  5, GATE_SHAPE_T1, GATE_ORIENTATION_90},
+   {10,  6, GATE_SHAPE_L2, GATE_ORIENTATION_180},
+   { 6,  6, GATE_SHAPE_L4, GATE_ORIENTATION_90},
     {14,  8, GATE_SHAPE_T1, GATE_ORIENTATION_90},
     { 3, 10, GATE_SHAPE_L3, GATE_ORIENTATION_270},
-    { 9, 14, GATE_SHAPE_L1, GATE_ORIENTATION_90},
-    { 3, 15, GATE_SHAPE_T3, GATE_ORIENTATION_0},
-    { 2, 17, GATE_SHAPE_L2, GATE_ORIENTATION_180},
-    {12, 18, GATE_SHAPE_T3, GATE_ORIENTATION_270},
-    { 5, 18, GATE_SHAPE_L4, GATE_ORIENTATION_90},
-    {10, 19, GATE_SHAPE_L3, GATE_ORIENTATION_180},
+   { 9, 14, GATE_SHAPE_L1, GATE_ORIENTATION_90},
+   { 3, 15, GATE_SHAPE_T3, GATE_ORIENTATION_0},
+   { 2, 17, GATE_SHAPE_L2, GATE_ORIENTATION_180},
+  {12, 18, GATE_SHAPE_T3, GATE_ORIENTATION_270},
+  { 5, 18, GATE_SHAPE_L4, GATE_ORIENTATION_90},
+   {10, 19, GATE_SHAPE_L3, GATE_ORIENTATION_180},
 };
 
 static const u8 sRotatingGateTiles_1[] = INCBIN_U8("graphics/rotating_gates/l1.4bpp");
@@ -624,11 +624,11 @@ static s32 GetCurrentMapRotatingGatePuzzleType(void)
         return PUZZLE_FORTREE_CITY_GYM;
     }
 
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE110_TRICK_HOUSE_PUZZLE6) &&
-        gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE110_TRICK_HOUSE_PUZZLE6))
-    {
-        return PUZZLE_ROUTE110_TRICK_HOUSE_PUZZLE6;
-    }
+   // if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE110_TRICK_HOUSE_PUZZLE6) &&
+   //     gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE110_TRICK_HOUSE_PUZZLE6))
+   // {
+    //    return PUZZLE_ROUTE110_TRICK_HOUSE_PUZZLE6;
+    //}
 
     return PUZZLE_NONE;
 }
@@ -684,10 +684,10 @@ static void RotatingGate_LoadPuzzleConfig(void)
         sRotatingGate_PuzzleConfig = sRotatingGate_FortreePuzzleConfig;
         sRotatingGate_PuzzleCount = ARRAY_COUNT(sRotatingGate_FortreePuzzleConfig);
         break;
-    case PUZZLE_ROUTE110_TRICK_HOUSE_PUZZLE6:
-        sRotatingGate_PuzzleConfig = sRotatingGate_TrickHousePuzzleConfig;
-        sRotatingGate_PuzzleCount = ARRAY_COUNT(sRotatingGate_TrickHousePuzzleConfig);
-        break;
+    //case PUZZLE_ROUTE110_TRICK_HOUSE_PUZZLE6:
+    //    sRotatingGate_PuzzleConfig = sRotatingGate_TrickHousePuzzleConfig;
+    //    sRotatingGate_PuzzleCount = ARRAY_COUNT(sRotatingGate_TrickHousePuzzleConfig);
+    //    break;
     case PUZZLE_NONE:
     default:
         return;

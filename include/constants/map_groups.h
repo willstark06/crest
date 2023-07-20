@@ -65,6 +65,9 @@
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
 #define MAP_GLENDALE            (57 | (0 << 8))
 #define MAP_TRAIL1              (58 | (0 << 8))
+#define MAP_TRAIL2              (59 | (0 << 8))
+#define MAP_FOREST              (60 | (0 << 8))
+#define MAP_RIVERROUTE1         (61 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -570,19 +573,8 @@
 #define MAP_ROUTE109_SEASHORE_HOUSE (0 | (28 << 8))
 
 // gMapGroup_IndoorRoute110
-#define MAP_ROUTE110_TRICK_HOUSE_ENTRANCE                (0 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_END                     (1 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_CORRIDOR                (2 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE1                 (3 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE2                 (4 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE3                 (5 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE4                 (6 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE5                 (7 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE6                 (8 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE7                 (9 | (29 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE8                 (10 | (29 << 8))
-#define MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE (11 | (29 << 8))
-#define MAP_ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE (12 | (29 << 8))
+#define MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE (0 | (29 << 8))
+#define MAP_ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE (1 | (29 << 8))
 
 // gMapGroup_IndoorRoute113
 #define MAP_ROUTE113_GLASS_WORKSHOP (0 | (30 << 8))

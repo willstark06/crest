@@ -18,7 +18,7 @@ script glendalehousetwo_couch {
 
 script glendalehousetwoman{
     lockall
-    msgbox(format("Hermie came by earlier, said he was going out to see something or other."), MSGBOX_NPC)
+    msgbox(format("HERMIE came by earlier, said he was going out to see something or other."), MSGBOX_NPC)
     waitmessage
     releaseall
 }

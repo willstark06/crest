@@ -24,6 +24,18 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
+    [NATIONAL_DEX_FIBNAR] =
+    {
+        .categoryName = _("Sus"),
+        .height = 7,
+        .weight = 69,
+        .description = gFibnarPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
     [NATIONAL_DEX_IVYSAUR] =
     {
         .categoryName = _("Seed"),

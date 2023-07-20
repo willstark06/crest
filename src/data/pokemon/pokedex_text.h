@@ -10,6 +10,12 @@ const u8 gBulbasaurPokedexText[] = _(
     "By soaking up the sun's rays, the seed\n"
     "grows progressively larger.");
 
+const u8 gFibnarPokedexText[] = _(
+    "Fibnar developed its cute and fluffy\n"
+    "exterior due to its thieving lifestyle.\n"
+    "Humans would allow the cutest Fibnar\n"
+    "to continue to steal their trash.");
+
 const u8 gIvysaurPokedexText[] = _(
     "To support its bulb, Ivysaur's legs\n"
     "grow sturdy. If it spends more time lying in\n"

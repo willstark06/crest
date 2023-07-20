@@ -752,35 +752,12 @@
 #define METATILE_TrickHousePuzzle_Arrow_RedOnBlack_Right_Alt  0x27C
 #define METATILE_TrickHousePuzzle_Arrow_RedOnBlack_Up         0x262
 #define METATILE_TrickHousePuzzle_Arrow_YellowOnWhite_Right   0x298
-#define METATILE_TrickHousePuzzle_BlueDoorH_Closed_Tile0      0x23B
-#define METATILE_TrickHousePuzzle_BlueDoorH_Closed_Tile1      0x23C
-#define METATILE_TrickHousePuzzle_BlueDoorH_Closed_Tile2      0x243
-#define METATILE_TrickHousePuzzle_BlueDoorH_Closed_Tile3      0x244
-#define METATILE_TrickHousePuzzle_BlueDoorH_Open_Tile0        0x24B
-#define METATILE_TrickHousePuzzle_BlueDoorH_Open_Tile1        0x24C
-#define METATILE_TrickHousePuzzle_BlueDoorH_Open_Tile2        0x253
-#define METATILE_TrickHousePuzzle_BlueDoorH_Open_Tile3        0x254
-#define METATILE_TrickHousePuzzle_BlueDoorV_Open0             0x23D
-#define METATILE_TrickHousePuzzle_BlueDoorV_Open1             0x245
-#define METATILE_TrickHousePuzzle_BlueDoorV_Retracted         0x24D
 #define METATILE_TrickHousePuzzle_Button_Pressed              0x259
-#define METATILE_TrickHousePuzzle_Button_Up                   0x258
 #define METATILE_TrickHousePuzzle_Door_Shuttered              0x26A
-#define METATILE_TrickHousePuzzle_Floor_ShadowTop             0x255
-#define METATILE_TrickHousePuzzle_Floor_ShadowTop_Alt         0x252
 #define METATILE_TrickHousePuzzle_Lever_Off                   0x23E
-#define METATILE_TrickHousePuzzle_Lever_On                    0x23F
 #define METATILE_TrickHousePuzzle_RedDoorH_Closed_Tile0       0x238
-#define METATILE_TrickHousePuzzle_RedDoorH_Closed_Tile1       0x239
 #define METATILE_TrickHousePuzzle_RedDoorH_Closed_Tile2       0x240
-#define METATILE_TrickHousePuzzle_RedDoorH_Closed_Tile3       0x241
-#define METATILE_TrickHousePuzzle_RedDoorH_Open_Tile0         0x248
-#define METATILE_TrickHousePuzzle_RedDoorH_Open_Tile1         0x249
-#define METATILE_TrickHousePuzzle_RedDoorH_Open_Tile2         0x250
 #define METATILE_TrickHousePuzzle_RedDoorH_Open_Tile3         0x251
-#define METATILE_TrickHousePuzzle_RedDoorV_Open0              0x23A
-#define METATILE_TrickHousePuzzle_RedDoorV_Open1              0x242
-#define METATILE_TrickHousePuzzle_RedDoorV_Retracted          0x24A
 #define METATILE_TrickHousePuzzle_Stairs_Down                 0x20B
 
 // gTileset_Underwater

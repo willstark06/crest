@@ -65,6 +65,12 @@ extern const u32 gOpenPokeballGfx[];
 // pokemon gfx
 extern const u16 gMonIconPalettes[][16];
 
+extern const u32 gMonFrontPic_Fibnar[];
+extern const u32 gMonPalette_Fibnar[];
+extern const u32 gMonBackPic_Fibnar[];
+extern const u32 gMonShinyPalette_Fibnar[];
+extern const u8 gMonIcon_Fibnar[];
+extern const u8 gMonFootprint_Fibnar[];
 extern const u32 gMonFrontPic_CircledQuestionMark[];
 extern const u32 gMonFrontPic_DoubleQuestionMark[];
 extern const u32 gMonFrontPic_Bulbasaur[];

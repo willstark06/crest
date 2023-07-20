@@ -863,6 +863,28 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
+    [SPECIES_FIBNAR] =
+    {
+        .baseHP        = 30,
+        .baseAttack    = 54,
+        .baseDefense   = 40,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 40,
+        .types = { TYPE_NORMAL, TYPE_DARK },
+        .catchRate = 255,
+        .expYield = 55,
+        .evYield_SpAttack  = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_FIELD},
+        .abilities = {ABILITY_PICKUP, ABILITY_NONE, ABILITY_INTIMIDATE},
+        .bodyColor = BODY_COLOR_PINK,
+        .noFlip = FALSE,
+    },
+
     [SPECIES_IVYSAUR] =
     {
         .baseHP        = 60,

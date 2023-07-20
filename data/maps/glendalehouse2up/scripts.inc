@@ -14,7 +14,6 @@ glendalehouse2uptrash::
 	lockall
 	msgbox glendalehouse2uptrash_Text_0
 	waitmessage
-	giveitem ITEM_POKE_BALL, 5
 	releaseall
 	return
 
@@ -31,10 +30,9 @@ glendalehouse2upshelf_Text_0:
 	.string "It's empty.$"
 
 glendalehouse2uptrash_Text_0:
-	.string "It's a trash can.\p"
-	.string "There's something inside!$"
+	.string "It's a trash can.$"
 
 glendalehouse2upbed_Text_0:
-	.string "It's Henry's old bed from before he left\n"
+	.string "It's HENRY's old bed from before he left\n"
 	.string "town to become a POKéMON trainer...\p"
 	.string "Hopefully that worked out for him.$"

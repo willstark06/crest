@@ -119,10 +119,10 @@ u16 MoveRotatingTileObjects(u8 puzzleNumber)
         s16 y = objectEvents[i].y + MAP_OFFSET;
         u16 metatile = MapGridGetMetatileIdAt(x, y);
 
-        if (!sRotatingTilePuzzle->isTrickHouse)
-            puzzleTileStart = METATILE_MossdeepGym_YellowArrow_Right;
-        else
-            puzzleTileStart = METATILE_TrickHousePuzzle_Arrow_YellowOnWhite_Right;
+        //if (!sRotatingTilePuzzle->isTrickHouse)
+         //   puzzleTileStart = METATILE_MossdeepGym_YellowArrow_Right;
+        //else
+        //    puzzleTileStart = METATILE_TrickHousePuzzle_Arrow_YellowOnWhite_Right;
 
         // Object is on a metatile before the puzzle tile section
         // UB: Because this is not if (metatile < puzzleTileStart), for the trick house (metatile - puzzleTileStart) below can result in casting a negative value to u8
@@ -196,10 +196,10 @@ void TurnRotatingTileObjects(void)
     if (sRotatingTilePuzzle == NULL)
         return;
 
-    if (!sRotatingTilePuzzle->isTrickHouse)
-        puzzleTileStart = METATILE_MossdeepGym_YellowArrow_Right;
-    else
-        puzzleTileStart = METATILE_TrickHousePuzzle_Arrow_YellowOnWhite_Right;
+    //if (!sRotatingTilePuzzle->isTrickHouse)
+       puzzleTileStart = METATILE_MossdeepGym_YellowArrow_Right;
+    //else
+    //    puzzleTileStart = METATILE_TrickHousePuzzle_Arrow_YellowOnWhite_Right;
 
     objectEvents = gSaveBlock1Ptr->objectEventTemplates;
     for (i = 0; i < sRotatingTilePuzzle->numObjects; i++)
@@ -322,10 +322,10 @@ static void TurnUnsavedRotatingTileObject(u8 eventTemplateId, u8 puzzleTileNum)
     s16 y = objectEvents[eventTemplateId].y + MAP_OFFSET;
     u16 metatile = MapGridGetMetatileIdAt(x, y);
 
-    if (!sRotatingTilePuzzle->isTrickHouse)
+   //if (!sRotatingTilePuzzle->isTrickHouse)
         puzzleTileStart = METATILE_MossdeepGym_YellowArrow_Right;
-    else
-        puzzleTileStart = METATILE_TrickHousePuzzle_Arrow_YellowOnWhite_Right;
+    //else
+    //    puzzleTileStart = METATILE_TrickHousePuzzle_Arrow_YellowOnWhite_Right;
 
     tileDifference = (u8)((metatile - puzzleTileStart) % METATILE_ROW_WIDTH);
     tileDifference -= puzzleTileNum;

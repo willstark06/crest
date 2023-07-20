@@ -6,6 +6,16 @@
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_Fibnar_1[] = 
+{
+    ANIMCMD_FRAME(0,10),
+    ANIMCMD_FRAME(1,20),
+    ANIMCMD_FRAME(0,20),
+    ANIMCMD_FRAME(1,10),
+    ANIMCMD_FRAME(0,10),
+    ANIMCMD_END,
+};
+
 static const union AnimCmd sAnim_Bulbasaur_1[] =
 {
     ANIMCMD_FRAME(0, 30),
@@ -10504,6 +10514,7 @@ static const union AnimCmd *const sAnims_##name[] = \
 }
 
 SINGLE_ANIMATION(None);
+SINGLE_ANIMATION(Fibnar);
 SINGLE_ANIMATION(Bulbasaur);
 SINGLE_ANIMATION(Ivysaur);
 SINGLE_ANIMATION(Venusaur);
@@ -11640,6 +11651,7 @@ SINGLE_ANIMATION(EnamorusTherian);
 const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 {
     [SPECIES_NONE]        = sAnims_None,
+    [SPECIES_FIBNAR]      = sAnims_Fibnar,
     [SPECIES_BULBASAUR]   = sAnims_Bulbasaur,
     [SPECIES_IVYSAUR]     = sAnims_Ivysaur,
     [SPECIES_VENUSAUR]    = sAnims_Venusaur,

@@ -553,17 +553,21 @@ gStdScripts_End::
 	.include "data/maps/Route104_Prototype/scripts.inc"
 	.include "data/maps/Route104_PrototypePrettyPetalFlowerShop/scripts.inc"
 	.include "data/maps/Route109_SeashoreHouse/scripts.inc"
-	.include "data/maps/Route110_TrickHouseEntrance/scripts.inc"
-	.include "data/maps/Route110_TrickHouseEnd/scripts.inc"
-	.include "data/maps/Route110_TrickHouseCorridor/scripts.inc"
-	.include "data/maps/Route110_TrickHousePuzzle1/scripts.inc"
-	.include "data/maps/Route110_TrickHousePuzzle2/scripts.inc"
-	.include "data/maps/Route110_TrickHousePuzzle3/scripts.inc"
-	.include "data/maps/Route110_TrickHousePuzzle4/scripts.inc"
-	.include "data/maps/Route110_TrickHousePuzzle5/scripts.inc"
-	.include "data/maps/Route110_TrickHousePuzzle6/scripts.inc"
-	.include "data/maps/Route110_TrickHousePuzzle7/scripts.inc"
-	.include "data/maps/Route110_TrickHousePuzzle8/scripts.inc"
+
+
+	//.include "data/maps/Route110_TrickHouseEntrance/scripts.inc"
+	//.include "data/maps/Route110_TrickHouseEnd/scripts.inc"
+	//.include "data/maps/Route110_TrickHouseCorridor/scripts.inc"
+	//.include "data/maps/Route110_TrickHousePuzzle1/scripts.inc"
+	//.include "data/maps/Route110_TrickHousePuzzle2/scripts.inc"
+	//.include "data/maps/Route110_TrickHousePuzzle3/scripts.inc"
+	//.include "data/maps/Route110_TrickHousePuzzle4/scripts.inc"
+	//.include "data/maps/Route110_TrickHousePuzzle5/scripts.inc"
+	//.include "data/maps/Route110_TrickHousePuzzle6/scripts.inc"
+	//.include "data/maps/Route110_TrickHousePuzzle7/scripts.inc"
+	//.include "data/maps/Route110_TrickHousePuzzle8/scripts.inc"
+
+
 	.include "data/maps/Route110_SeasideCyclingRoadNorthEntrance/scripts.inc"
 	.include "data/maps/Route110_SeasideCyclingRoadSouthEntrance/scripts.inc"
 	.include "data/maps/Route113_GlassWorkshop/scripts.inc"
@@ -1074,3 +1078,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/glendalehouse2/scripts.inc"
 
 	.include "data/maps/glendalehouse2up/scripts.inc"
+
+	.include "data/maps/trail2/scripts.inc"
+
+	.include "data/maps/forest/scripts.inc"
+
+	.include "data/maps/riverroute1/scripts.inc"
