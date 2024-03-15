@@ -1,0 +1,34 @@
+mapscripts trail2_MapScripts{}
+
+script lucybattle{
+    lockall
+    trainerbattle_single(TRAINER_LUCY_2, lucyintro, lucyoutro)
+    msgbox(format("Erm... could you ask your dad if he can give me a POKéMON too?"))
+    waitmessage
+    releaseall
+}
+
+text lucyintro{
+    format("When trainers' eyes meet, they battle!")
+}
+
+text lucyoutro{
+    format("When all my POKéMON faint, I lose...")
+}
+
+script benjaminbattle{
+    lockall
+    trainerbattle_single(TRAINER_ROSE_1, benintro, benoutro)
+    msgbox(format("Huh? Oh, no my YANMA didn't die, I just want to use a GRUBBIN instead."))
+    waitmessage
+    releaseall
+}
+
+text benintro{
+   format("Hey! Do you wanna see my bug?!!")
+}
+
+text benoutro{
+    format("Nooo... YANMA... Oh well. I'll move on... some day...")
+}
+

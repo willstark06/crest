@@ -755,9 +755,6 @@
 #define METATILE_TrickHousePuzzle_Button_Pressed              0x259
 #define METATILE_TrickHousePuzzle_Door_Shuttered              0x26A
 #define METATILE_TrickHousePuzzle_Lever_Off                   0x23E
-#define METATILE_TrickHousePuzzle_RedDoorH_Closed_Tile0       0x238
-#define METATILE_TrickHousePuzzle_RedDoorH_Closed_Tile2       0x240
-#define METATILE_TrickHousePuzzle_RedDoorH_Open_Tile3         0x251
 #define METATILE_TrickHousePuzzle_Stairs_Down                 0x20B
 
 // gTileset_Underwater

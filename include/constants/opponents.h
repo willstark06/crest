@@ -3,7 +3,7 @@
 
 #define TRAINER_NONE                          0
 #define TRAINER_HERMIE_TRAIL_ONE              1
-#define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
+#define TRAINER_BENNAMIN                      2
 #define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
 #define TRAINER_GRUNT_AQUA_HIDEOUT_3          4
 #define TRAINER_GRUNT_AQUA_HIDEOUT_4          5
@@ -669,7 +669,7 @@
 #define TRAINER_MAY_LILYCOVE_TREECKO        665
 #define TRAINER_MAY_LILYCOVE_TORCHIC        666
 #define TRAINER_JONAH                       667
-#define TRAINER_HENRY                       668
+#define TRAINER_LUCY_2                      668
 #define TRAINER_ROGER                       669
 #define TRAINER_ALEXA                       670
 #define TRAINER_RUBEN                       671

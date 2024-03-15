@@ -25,16 +25,16 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Hermie1),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_1] =
+    [TRAINER_BENNAMIN] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerName = _("BENJAMIN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout1),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Bennamin),
     },
 
     [TRAINER_GRUNT_AQUA_HIDEOUT_2] =
@@ -8017,18 +8017,29 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jonah),
     },
 
-    [TRAINER_HENRY] =
+    [TRAINER_LUCY_2] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
-        .trainerName = _("HENRY"),
+        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
+        .trainerName = _("LUCY"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Henry),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Lucy2),
     },
 
+    //[TRAINER_HENRY] =
+   // {
+   //     .trainerClass = TRAINER_CLASS_FISHERMAN,
+   //     .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+   //     .trainerPic = TRAINER_PIC_FISHERMAN,
+   //     .trainerName = _("HENRY"),
+   //     .items = {},
+   //     .doubleBattle = FALSE,
+   //     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+   //     .party = NO_ITEM_DEFAULT_MOVES(sParty_Henry),
+   // },
     [TRAINER_ROGER] =
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
