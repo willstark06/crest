@@ -4430,6 +4430,26 @@
       "secondary_tileset": "gTileset_TrickHousePuzzle",
       "border_filepath": "data/layouts/trail3/border.bin",
       "blockdata_filepath": "data/layouts/trail3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GLENVIEWHOUSE1",
+      "name": "glenviewhouse1_Layout",
+      "width": 16,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/glenviewhouse1/border.bin",
+      "blockdata_filepath": "data/layouts/glenviewhouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GLENVIEWHOUSE1_2F",
+      "name": "glenviewhouse1_2f_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/glenviewhouse1_2f/border.bin",
+      "blockdata_filepath": "data/layouts/glenviewhouse1_2f/map.bin"
     }
   ]
 }

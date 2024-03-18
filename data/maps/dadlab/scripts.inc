@@ -98,6 +98,104 @@ dadcomputer3::
 	return
 
 
+browhine::
+	lockall
+	msgbox browhine_Text_0
+	waitmessage
+	releaseall
+	return
+
+
+dadgive::
+	lockall
+	applymovement 4, hermiepout
+	msgbox dadgive_Text_0
+	waitmessage
+	waitmovement 0
+	applymovement 3, dadfacebro
+	waitmovement 0
+	msgbox dadgive_Text_1
+	waitmessage
+	msgbox dadgive_Text_2
+	applymovement 4, hermieleavelab
+	waitmovement 0
+	removeobject 4
+	applymovement 3, dadfaceplayer
+	waitmovement 0
+	msgbox dadgive_Text_3
+	waitmessage
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox dadgive_Text_4
+	waitmessage
+	waitfanfare
+	setflag FLAG_SYS_POKEDEX_GET
+	special SetUnlockedPokedexFlags
+	msgbox dadgive_Text_5
+	waitmessage
+	giveitem ITEM_POKE_BALL, 10
+	msgbox dadgive_Text_6
+	waitmessage
+	applymovement 3, dadleavelab
+	waitmovement 0
+	removeobject 3
+	releaseall
+	return
+
+
+dadfaceplayer:
+	face_player
+	step_end
+
+dadfacebro:
+	face_left
+	step_end
+
+dadleavelab:
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_down
+	step_end
+
+hermieleavelab:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_down
+	step_end
+
+hermiepout:
+	walk_fast_up
+	walk_fast_left
+	walk_fast_down
+	walk_fast_right
+	walk_fast_up
+	walk_fast_left
+	walk_fast_down
+	walk_fast_right
+	walk_fast_up
+	walk_fast_left
+	walk_fast_down
+	walk_fast_right
+	walk_fast_up
+	walk_fast_left
+	walk_fast_down
+	walk_fast_right
+	walk_fast_up
+	walk_fast_left
+	walk_fast_down
+	walk_fast_right
+	walk_fast_up
+	walk_fast_left
+	walk_fast_down
+	walk_fast_right
+	step_end
+
 dadinlab_Text_0:
 	.string "DAD: I gotta say I'm impressed.\p"
 	.string "You and that POKéMON were completely\n"
@@ -138,3 +236,51 @@ dadlabbooks_Text_0:
 dadcomputer3_Text_0:
 	.string "There's a program called 'infinit.exe'\n"
 	.string "running.$"
+
+browhine_Text_0:
+	.string "Daddy please!! Please daddy!! I want a\n"
+	.string "strong POKéMON!! Like a fire type!! Or\l"
+	.string "ooh! A dragon type! No wait... a steel\l"
+	.string "type!! Or a fire type! Or maybe a dragon\l"
+	.string "type! Pleeeeeeeaase!!!$"
+
+dadgive_Text_0:
+	.string "HERMIE: Daddy please give me a\n"
+	.string "stronger POKéMON!! Why does\l"
+	.string "{PLAYER} get a cool POKéMON and I\l"
+	.string "don't?? You never let me have the cool\l"
+	.string "things!! Waaaahh!! Waaaaah!! Waaaaah!!$"
+
+dadgive_Text_1:
+	.string "DAD: HERMIE, how many times do I have\n"
+	.string "to tell you that POKéMON are only as\l"
+	.string "strong as their trainers? That MUDBRAY\l"
+	.string "has much potential if raised correctly.\l"
+	.string "Now go to your room, I've had enough of\l"
+	.string "your whining.$"
+
+dadgive_Text_2:
+	.string "HERMIE: Okayyyy...\p"
+	.string "let's go, MUDBRAY.$"
+
+dadgive_Text_3:
+	.string "DAD: Now, {PLAYER}, I have a very\n"
+	.string "important thing to give you. After\l"
+	.string "seeing how well you did against that\l"
+	.string "ABSOL, I've decided to let you have\l"
+	.string "this POKéDEX that a colleage in the\l"
+	.string "HOENN region sent me.$"
+
+dadgive_Text_4:
+	.string "{PLAYER} received the POKéDEX!$"
+
+dadgive_Text_5:
+	.string "DAD: That device will allow you to\n"
+	.string "record data on every POKéMON you\l"
+	.string "capture.\p"
+	.string "Speaking of which, take some of these.$"
+
+dadgive_Text_6:
+	.string "Alright, you have fun. I'm going to go\n"
+	.string "make sure HERMIE doesn't get himself\l"
+	.string "trampled.$"

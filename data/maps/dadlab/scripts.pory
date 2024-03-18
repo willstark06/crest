@@ -80,6 +80,94 @@ script dadcomputer3{
     releaseall
 }
 
+script browhine{
+    lockall
+    msgbox(format("Daddy please!! Please daddy!! I want a strong POKéMON!! Like a fire type!! Or ooh! A dragon type! No wait... a steel type!! Or a fire type! Or maybe a dragon type! Pleeeeeeeaase!!!"))
+    waitmessage
+    releaseall
+}
 
+script dadgive{
+    lockall
+    applymovement(4, hermiepout)
+    msgbox(format("HERMIE: Daddy please give me a stronger POKéMON!! Why does {PLAYER} get a cool POKéMON and I don't?? You never let me have the cool things!! Waaaahh!! Waaaaah!! Waaaaah!!"))
+    waitmessage
+    waitmovement(0)
+    applymovement(3, dadfacebro)
+    waitmovement(0)
+    msgbox(format("DAD: HERMIE, how many times do I have to tell you that POKéMON are only as strong as their trainers? That MUDBRAY has much potential if raised correctly. Now go to your room, I've had enough of your whining."))
+    waitmessage
+    msgbox(format("HERMIE: Okayyyy...\plet's go, MUDBRAY."))
+    applymovement(4, hermieleavelab)
+    waitmovement(0)
+    removeobject(4)
+    applymovement(3, dadfaceplayer)
+    waitmovement(0)
+    msgbox(format("DAD: Now, {PLAYER}, I have a very important thing to give you. After seeing how well you did against that ABSOL, I've decided to let you have this POKéDEX that a colleage in the HOENN region sent me."))
+    waitmessage
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox(format("{PLAYER} received the POKéDEX!"))
+    waitmessage
+    waitfanfare
+    setflag(FLAG_SYS_POKEDEX_GET)
+    special(SetUnlockedPokedexFlags)
+    msgbox(format("DAD: That device will allow you to record data on every POKéMON you capture.\pSpeaking of which, take some of these."))
+    waitmessage
+    giveitem(ITEM_POKE_BALL, 10)
+    msgbox(format("Alright, you have fun. I'm going to go make sure HERMIE doesn't get himself trampled."))
+    waitmessage
+    applymovement(3, dadleavelab)
+    waitmovement(0)
+    removeobject(3)
+    releaseall
+}
+
+movement dadfaceplayer{
+    face_player
+}
+
+movement dadfacebro{
+    face_left
+}
+
+movement dadleavelab{
+    walk_left
+    walk_down * 4
+    walk_right
+    walk_down
+}
+
+movement hermieleavelab{
+    walk_down * 4
+    walk_right
+    walk_down
+}
+
+movement hermiepout{
+    walk_fast_up
+    walk_fast_left
+    walk_fast_down
+    walk_fast_right
+    walk_fast_up
+    walk_fast_left
+    walk_fast_down
+    walk_fast_right
+    walk_fast_up
+    walk_fast_left
+    walk_fast_down
+    walk_fast_right
+    walk_fast_up
+    walk_fast_left
+    walk_fast_down
+    walk_fast_right
+    walk_fast_up
+    walk_fast_left
+    walk_fast_down
+    walk_fast_right
+    walk_fast_up
+    walk_fast_left
+    walk_fast_down
+    walk_fast_right
+}
 
 

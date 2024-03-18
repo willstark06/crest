@@ -3,7 +3,6 @@ trail2_MapScripts::
 
 
 lucybattle::
-	lockall
 	trainerbattle_single TRAINER_LUCY_2, lucyintro, lucyoutro
 	msgbox lucybattle_Text_0
 	waitmessage
@@ -12,9 +11,24 @@ lucybattle::
 
 
 benjaminbattle::
-	lockall
-	trainerbattle_single TRAINER_ROSE_1, benintro, benoutro
+	trainerbattle_single TRAINER_BENNAMIN, benintro, benoutro
 	msgbox benjaminbattle_Text_0
+	waitmessage
+	releaseall
+	return
+
+
+momtalk1::
+	lockall
+	msgbox momtalk1_Text_0
+	waitmessage
+	releaseall
+	return
+
+
+kidtalk1::
+	lockall
+	msgbox kidtalk1_Text_0
 	waitmessage
 	releaseall
 	return
@@ -27,6 +41,15 @@ lucybattle_Text_0:
 benjaminbattle_Text_0:
 	.string "Huh? Oh, no my YANMA didn't die, I just\n"
 	.string "want to use a GRUBBIN instead.$"
+
+momtalk1_Text_0:
+	.string "Hey there, could you do me a favor? My\n"
+	.string "kid says he won't move until I catch him\l"
+	.string "a POKéMON. Could you get one for him?\l"
+	.string "Please? Please? I'm so tired.$"
+
+kidtalk1_Text_0:
+	.string "WAAAAHHH!!! WGGAAAAAAH!!! PIDDGEY!!!$"
 
 lucyintro::
 	.string "When trainers' eyes meet, they battle!$"

@@ -22,6 +22,11 @@
       "map": "MAP_TRAIL2",
       "offset": 30,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE117",
+      "offset": 0,
+      "direction": "dive"
     }
   ],
   "object_events": [

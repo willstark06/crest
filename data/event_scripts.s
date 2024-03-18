@@ -1090,3 +1090,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/glendale2/scripts.inc"
 
 	.include "data/maps/trail3/scripts.inc"
+
+	.include "data/maps/glenviewhouse1/scripts.inc"
+
+	.include "data/maps/glenviewhouse1_2f/scripts.inc"

@@ -1,17 +1,17 @@
 mapscripts trail3_MapScripts{}
 
-script lucybattle{
+script lucybattle2{
     lockall
-    trainerbattle_single(TRAINER_LUCY_2, lucyintro, lucyoutro)
+    trainerbattle_single(TRAINER_LUCY_2, lucyintro2, lucyoutro2)
     msgbox(format("Erm... could you ask your dad if he can give me a POKéMON too?"))
     waitmessage
     releaseall
 }
 
-text lucyintro{
+text lucyintro2{
     format("When trainers' eyes meet, they battle!")
 }
 
-text lucyoutro{
+text lucyoutro2{
     format("When all my POKéMON faint, I lose...")
 }

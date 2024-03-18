@@ -515,7 +515,7 @@
 #define FLAG_DAD_NICKNAME                    0x1DF // Unused Flag
 #define FLAG_DAD_NORMAL                      0x1E0 // Unused Flag
 #define FLAG_HERMIE_BATTLE_ONE               0x1E1 // Unused Flag
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
+#define FLAG_DAD_GIVE                        0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
 
 // Mystery Gift Flags (Unknown)

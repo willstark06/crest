@@ -13,6 +13,7 @@ hermiebattleone::
 
 hermieleave::
 	setflag FLAG_HERMIE_BATTLE_ONE
+	setvar VAR_GLENDALE_STATE, 2
 	lockall
 	msgbox hermieleave_Text_0
 	waitmessage
