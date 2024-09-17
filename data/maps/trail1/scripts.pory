@@ -12,6 +12,7 @@ script hermieleave{
     setflag(FLAG_HERMIE_BATTLE_ONE)
     setvar(VAR_GLENDALE_STATE, 2)
     lockall
+    clearflag(FLAG_DAD_GIVE)
     msgbox(format("Your POKéMON is way stronger!!! Why does DAD always give you the stronger ones!!!\pI'm gonna make him give me a better one!"))
     waitmessage
     if(var(VAR_HERMIE_POS) == 0){

@@ -1,0 +1,104 @@
+{
+  "id": "MAP_GLENVIEWGYM",
+  "name": "glenviewgym",
+  "layout": "LAYOUT_GLENVIEWGYM",
+  "music": "MUS_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_GLENVIEWGYM2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_GLENVIEWGYM2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_GLENVIEWGYM2",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 11,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_GLENVIEWGYM2",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 13,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_GLENVIEWGYM2",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 2,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_GLENVIEWGYM2",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_GLENVIEWGYM2",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_GLENVIEWGYM3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_GLENVIEWGYM2",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 7,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_GLENDALE2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 6,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_GLENDALE2",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

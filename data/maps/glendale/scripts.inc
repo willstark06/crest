@@ -89,21 +89,23 @@ glendalescript_ontransition_1:
 
 glendalescript_ontransition_2:
 	setrespawn HEAL_LOCATION_CONTROLLERS_HOUSE
+	setflag FLAG_SYS_B_DASH
 	setflag FLAG_DAD_NICKNAME
 	setflag FLAG_DAD_NORMAL
 	setflag FLAG_DAD_GIVE
 	goto glendalescript_ontransition_1
 
 glendalescript_ontransition_3:
+	setflag FLAG_SYS_B_DASH
 	setflag FLAG_DAD_NICKNAME
 	setflag FLAG_DAD_GIVE
 	clearflag FLAG_DAD_NORMAL
 	goto glendalescript_ontransition_1
 
 glendalescript_ontransition_4:
+	setflag FLAG_SYS_B_DASH
 	setflag FLAG_DAD_NICKNAME
 	setflag FLAG_DAD_NORMAL
-	clearflag FLAG_DAD_GIVE
 	goto glendalescript_ontransition_1
 
 

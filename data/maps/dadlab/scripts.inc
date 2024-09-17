@@ -137,6 +137,7 @@ dadgive::
 	waitmessage
 	applymovement 3, dadleavelab
 	waitmovement 0
+	setflag FLAG_DAD_GIVE
 	removeobject 3
 	releaseall
 	return

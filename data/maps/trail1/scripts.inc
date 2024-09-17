@@ -15,6 +15,7 @@ hermieleave::
 	setflag FLAG_HERMIE_BATTLE_ONE
 	setvar VAR_GLENDALE_STATE, 2
 	lockall
+	clearflag FLAG_DAD_GIVE
 	msgbox hermieleave_Text_0
 	waitmessage
 	compare VAR_HERMIE_POS, 0

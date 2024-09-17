@@ -121,7 +121,11 @@
     "OldaleTown_PokemonCenter_2F",
     "OldaleTown_Mart",
     "glenviewhouse1",
-    "glenviewhouse1_2f"
+    "glenviewhouse1_2f",
+    "glenviewhouse2",
+    "glenviewgym",
+    "glenviewgym2",
+    "glenviewgym3"
   ],
   "gMapGroup_IndoorDewford": [
     "DewfordTown_House1",

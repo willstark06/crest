@@ -92,6 +92,10 @@
 #define MAP_OLDALE_TOWN_MART              (4 | (2 << 8))
 #define MAP_GLENVIEWHOUSE1                (5 | (2 << 8))
 #define MAP_GLENVIEWHOUSE1_2F             (6 | (2 << 8))
+#define MAP_GLENVIEWHOUSE2                (7 | (2 << 8))
+#define MAP_GLENVIEWGYM                   (8 | (2 << 8))
+#define MAP_GLENVIEWGYM2                  (9 | (2 << 8))
+#define MAP_GLENVIEWGYM3                  (10 | (2 << 8))
 
 // gMapGroup_IndoorDewford
 #define MAP_DEWFORD_TOWN_HOUSE1            (0 | (3 << 8))

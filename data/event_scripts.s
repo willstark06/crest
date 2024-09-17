@@ -1094,3 +1094,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/glenviewhouse1/scripts.inc"
 
 	.include "data/maps/glenviewhouse1_2f/scripts.inc"
+
+	.include "data/maps/glenviewhouse2/scripts.inc"
+
+	.include "data/maps/glenviewgym/scripts.inc"
+
+	.include "data/maps/glenviewgym2/scripts.inc"
+
+	.include "data/maps/glenviewgym3/scripts.inc"

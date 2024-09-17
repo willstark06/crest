@@ -32,9 +32,36 @@ text benoutro{
 
 script momtalk1{
     lockall
-    msgbox(format("Hey there, could you do me a favor? My kid says he won't move until I catch him a POKéMON. Could you get one for him? Please? Please? I'm so tired."))
-    waitmessage
+    checkitem(ITEM_POKE_BALL, 1)
+    if (var(VAR_RESULT) == TRUE) {
+        setflag(FLAG_MOM_AND_KID_ONE)
+        msgbox(format("Oh my gosh, thank you for the POKéBALL, you're a life saver. Here, take these."))
+        waitmessage
+        giveitem(ITEM_POTION, 2)
+        msgbox(format("Okay Jimmy, let's go catch a PIDGEY!"))
+        waitmessage
+        msgbox(format("JIMMY: Yippee!!!"))
+        applymovement(4, kidrun)
+        waitmovement(0)
+        removeobject(4)
+        applymovement(3, momwalk)
+        waitmessage
+        waitmovement(0)
+        removeobject(3)
+    }
+    else {
+        msgbox(format("Hey there, could you do me a favor? My kid says he won't move until I catch him a POKéMON. Could you get me a POKéBALL? Please? Please? I'm so tired."))
+        waitmessage
+    }
     releaseall
+}
+
+movement kidrun{
+    walk_fast_right * 9
+}
+
+movement momwalk{
+    walk_right * 9
 }
 
 script kidtalk1{
